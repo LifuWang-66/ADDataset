@@ -48,8 +48,8 @@ def train(_class_, pars):
 
     data_transform, gt_transform = get_data_transforms(pars.image_size, pars.image_size)
     
-    train_path = 'C:/Users/Lifu Wang/Desktop/GT/Project/ReverseDistillation/content/' + _class_ + '/train'
-    test_path = 'C:/Users/Lifu Wang/Desktop/GT/Project/ReverseDistillation/content/' + _class_
+    train_path = 'C:/Users/Lifu Wang/Desktop/GT/Project/ADDataset/content/' + _class_ + '/train'
+    test_path = 'C:/Users/Lifu Wang/Desktop/GT/Project/ADDataset/content/' + _class_
     
     if not os.path.exists(pars.save_folder + '/' + _class_):
         os.makedirs(pars.save_folder + '/' + _class_)
